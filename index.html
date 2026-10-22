@@ -14,7 +14,7 @@
         
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #cfff04;
+            background-color: #4CBB17;
             color: #000;
             background-image: linear-gradient(to bottom, #000, #000);
             min-height: 100vh;
@@ -24,14 +24,14 @@
             position: relative;
             overflow: hidden;
             border-radius: 12px;
-            background-color: #cfff04;
+            background-color: #4CBB17;
             box-shadow: 0 10px 25px rgba(222, 176, 24, 0.713));
             border: 1px solid rgba(255,255,255,0.1);
         }
         
         .photo-slot {
-            background-color: #cfff04;
-            border: 2px solid #cfff04;
+            background-color: #4CBB17;
+            border: 2px solid #4CBB17;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -106,11 +106,11 @@
         }
         
         .photostrip-container {
-            background: linear-gradient(to bottom, #cfff04, #cfff04);
+            background: linear-gradient(to bottom, #4CBB17, #4CBB17);
             border-radius: 12px;
             padding: 20px;
             box-shadow: 0 10px 30px rgb(0, 0, 0);
-            border: 2px solid #cfff04;
+            border: 2px solid #4CBB17;
             position: relative;
             overflow: hidden;
             width: 450px;
@@ -118,24 +118,24 @@
         }
         
         .photostrip-footer {
-            border-top: 2px solid #FF69B4;
+            border-top: 2px solid #D2691E;
             padding-top: 20px;
             margin-top: 6px;
             text-align: center;
         }
         
         .photostrip-footer p {
-            color: #FF69B4;
+            color: #D2691E;
             font-weight: 600;
         }
         
         .photostrip-footer p:nth-child(2) {
-            color: #FF69B4;
+            color: #D2691E;
             font-weight: 500;
         }
         
         .photostrip-footer p:nth-child(3) {
-            color: #FF69B4;
+            color: #D2691E;
             font-weight: ;
         }
         
@@ -205,7 +205,7 @@
         }
         
         .photostrip-container .XINGXING-text {
-            color: #cfff04;
+            color: #4CBB17;
             text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
         }
         
@@ -419,7 +419,7 @@
                     
                     const placeholderContent = document.createElement('div');
                     placeholderContent.className = 'flex flex-col items-center justify-center h-full w-full';
-                    placeholderContent.style.backgroundColor = '#cfff04';
+                    placeholderContent.style.backgroundColor = '#4CBB17';
                     placeholderContent.innerHTML = `
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-3 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
@@ -592,7 +592,7 @@
                     const ctx = photoStripCanvas.getContext('2d');
                     
                     // Create black background
-                    ctx.fillStyle = '#cfff04';
+                    ctx.fillStyle = '#4CBB17';
                     ctx.fillRect(0, 0, stripWidth, stripHeight);
                     
                     // Header section - add logo first
@@ -616,7 +616,7 @@
                     const drawMembersArea = () => {
                         // Create a subtle overlay background
                         ctx.globalAlpha = 0.1;
-                        ctx.fillStyle = '#cfff04';
+                        ctx.fillStyle = '#4CBB17';
                         ctx.fillRect(0, membersAreaY, stripWidth, membersAreaHeight);
                         ctx.globalAlpha = 1;
                         
@@ -665,11 +665,11 @@
                             const yPos = photoStartY + (i * (photoHeight + photoSpacing));
                             
                             // Draw fixed rectangle frame background
-                            ctx.fillStyle = '#cfff04';
+                            ctx.fillStyle = '#4CBB17';
                             ctx.fillRect(photoX, yPos, photoWidth, photoHeight);
                             
                             // Add frame border
-                            ctx.strokeStyle = '#cfff04';
+                            ctx.strokeStyle = '#4CBB17';
                             ctx.lineWidth = 2;
                             ctx.strokeRect(photoX, yPos, photoWidth, photoHeight);
                             
@@ -707,7 +707,7 @@
                                 });
                             } else {
                                 // Placeholder text
-                                ctx.fillStyle = '#FF69B4';
+                                ctx.fillStyle = '#D2691E';
                                 ctx.font = '16px "Montserrat", sans-serif';
                                 ctx.textAlign = 'center';
                                 ctx.fillText(`Photo ${i + 1}`, stripWidth / 2, yPos + photoHeight / 2);
@@ -720,11 +720,11 @@
                     // Footer section - matching the exact layout with gold colors
                     const footerStartY = stripHeight - 70;
                     
-                    ctx.fillStyle = '#FF69B4';
+                    ctx.fillStyle = '#D2691E';
                     ctx.font = 'bold 18px "Montserrat", sans-serif';
                     ctx.fillText('PLANTS VS ZOMBIES', stripWidth / 2, footerStartY + 10);
                     
-                    ctx.fillStyle = '#FF69B4';
+                    ctx.fillStyle = '#D2691E';
                     ctx.font = 'bold 15px "Montserrat", sans-serif';
                     ctx.fillText('PEOPLE GROUP', stripWidth / 2, footerStartY + 30);
                     
