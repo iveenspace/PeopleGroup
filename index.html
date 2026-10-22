@@ -118,24 +118,24 @@
         }
         
         .photostrip-footer {
-            border-top: 2px solid #D2691E;
+            border-top: 2px solid #000000;
             padding-top: 20px;
             margin-top: 6px;
             text-align: center;
         }
         
         .photostrip-footer p {
-            color: #D2691E;
+            color: #000000;
             font-weight: 600;
         }
         
         .photostrip-footer p:nth-child(2) {
-            color: #D2691E;
+            color: #000000;
             font-weight: 500;
         }
         
         .photostrip-footer p:nth-child(3) {
-            color: #D2691E;
+            color: #000000;
             font-weight: ;
         }
         
@@ -286,7 +286,7 @@
                     </div>
                     
                     <!-- XINGXING Photo -->
-                    <div class="group-photo-container mb-12" style="width: 350px; height: 250px; display: flex; align-items: center; justify-content: center; overflow: hidden; background-color: transparent; border: none;">
+                    <div class="group-photo-container mb-12" style="width: 400px; height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden; background-color: transparent; border: none;">
                         <img id="XINGXINGGroupPhoto" src="./Untitled design (2).png" alt="XINGXINGGroup" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
 
@@ -584,7 +584,7 @@
                     statusMessage.textContent = "Generating photostrip...";
                     
                     const stripWidth = 450;
-                    const stripHeight = 1360;
+                    const stripHeight = 1300;
                     
                     photoStripCanvas.width = stripWidth;
                     photoStripCanvas.height = stripHeight;
@@ -610,7 +610,7 @@
                     }
                     
                     // Add the HAPPY BIRTHDAY ELIOT! group photo area
-                    const membersAreaY = 180;
+                    const membersAreaY = 170;
                     const membersAreaHeight = 300;
                     
                     const drawMembersArea = () => {
@@ -653,8 +653,8 @@
                     drawMembersArea();
                     
                     // Photo slots - clean layout matching reference
-                    const photoStartY = 510;
-                    const photoWidth = 390;
+                    const photoStartY = 480;
+                    const photoWidth = 400;
                     const photoHeight = 220;
                     const photoSpacing = 35;
                     const photoX = 30;
@@ -707,7 +707,7 @@
                                 });
                             } else {
                                 // Placeholder text
-                                ctx.fillStyle = '#D2691E';
+                                ctx.fillStyle = '#000000';
                                 ctx.font = '16px "Montserrat", sans-serif';
                                 ctx.textAlign = 'center';
                                 ctx.fillText(`Photo ${i + 1}`, stripWidth / 2, yPos + photoHeight / 2);
@@ -720,11 +720,11 @@
                     // Footer section - matching the exact layout with gold colors
                     const footerStartY = stripHeight - 70;
                     
-                    ctx.fillStyle = '#D2691E';
+                    ctx.fillStyle = '#000000';
                     ctx.font = 'bold 18px "Montserrat", sans-serif';
                     ctx.fillText('PLANTS VS ZOMBIES', stripWidth / 2, footerStartY + 10);
                     
-                    ctx.fillStyle = '#D2691E';
+                    ctx.fillStyle = '#000000';
                     ctx.font = 'bold 15px "Montserrat", sans-serif';
                     ctx.fillText('PEOPLE GROUP', stripWidth / 2, footerStartY + 30);
                     
